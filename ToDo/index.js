@@ -7,7 +7,7 @@ import TodoList from "./todoList";
 import useTodoState from './useTodoState';
 
 const App = () => {
-    const [todos, setTodos] = useTodoState([]);
+    const {todos, addTodo, deleteTodo} = useTodoState([]);
     return (
         <div className="App">
             <Typography component="h1" variant="h2">
