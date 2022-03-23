@@ -48,6 +48,17 @@ function showMovies(data) {
                     )}</div>
                     <div class="movie_average movie_average-${getClassByRate(movie.rating)}">${movie.rating}</div>
                 </div>
+                
+<!--                <button  class="movie_more-btn">Подробнее</button>-->
+<!--                <div class="movie_modal">-->
+<!--                    <div class="movie_modal-content">-->
+<!--                        <span class="close">&times;</span>-->
+<!--                        <div class="movie_modal-content movie_content">-->
+<!--                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, suscipit!-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
         `;
         moviesEl.appendChild(movieEl);
     });
@@ -66,6 +77,20 @@ form.addEventListener("submit", (e) => {
   }
 })
 
-/* TODO
-Модальное окно при клике
-Пагинация */
+let modal = document.getElementsByClassName("movie_modal");
+// let btn = document.getElementsByClassName("openBtn");
+// let span = document.getElementsByClassName("close")[0];
+//
+// btn.onclick = function () {
+//     modal.style.display = "block";
+// }
+//
+// span.onclick = function () {
+//     modal.style.display = "none";
+// }
+//
+// window.onclick = function (e) {
+//     if (e.target == modal) {
+//         modal.style.display = "none";
+//     }
+// }
