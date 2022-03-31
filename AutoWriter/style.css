@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Smokum&display=swap');
+
+body {
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    justify-content: center;
+    padding-top: 100px;
+    font-family: 'Smokum', cursive;
+    letter-spacing: 2px;
+    font-size: 24px;
+    background: #031800;
+    color: #00ff0d;
+    text-shadow: 0 0 3px #00ff0d;
+}
+
+span {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
