@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Ramaraja&family=Red+Hat+Mono:wght@500&family=Smokum&display=swap');
+
+body {
+    font-family: 'Red Hat Mono', monospace;
+}
+
+.container {
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hex-colors {
+    text-align: center;
+}
+
+.hex-colors h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+    animation: colorchange 7s infinite alternate;
+}
+
+.hex-colors h2 {
+    font-size: 28px;
+    margin-top: 15%;
+}
+
+@keyframes colorchange {
+    0% {
+        color: black;
+    }
+    15% {
+        color: indigo;
+    }
+    30% {
+        color: blue;
+    }
+    45% {
+        color: green;
+    }
+    60% {
+        color: yellow;
+    }
+    75% {
+        color: orange;
+    }
+    90% {
+        color: red;
+    }
+    100% {
+        color: white;
+    }
+}
+
+@media (max-width: 480px) {
+    .hex-colors h1{
+        font-size: 24px;
+    }
+    .hex-colors h2{
+        font-size: 24px;
+    }
+}
